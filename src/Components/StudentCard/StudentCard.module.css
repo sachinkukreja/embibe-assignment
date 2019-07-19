@@ -1,0 +1,27 @@
+.nameTag{
+    float: left;
+    background: #3467d4;
+    border-radius: 50px;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    line-height: 3em;
+    color: white;
+}
+
+.name{
+    float: left;
+    line-height: 3em;
+    margin-left: 10px;
+}
+
+.totalMarks{
+clear:both;
+float:left;
+}
+
+.rollNo{
+    clear:both;
+    float: left;
+}
+
