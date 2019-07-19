@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
             students: [],
             filtered_list: [],
             alphabeticalSortOrder: "ASC",
-            totalMarksSortOrder:"ASC"
+            totalMarksSortOrder: "ASC"
         }
     }
 
@@ -46,7 +46,7 @@ class Dashboard extends React.Component {
 
     renderStudentDetails() {
         return this.state.filtered_list.map(student => {
-            return (<StudentCard student={student} studentClicked={e => this.handleStudentClick(student)} />
+            return (<StudentCard key={student.rollNo} student={student} studentClicked={e => this.handleStudentClick(student)} />
             )
         })
     }
@@ -123,7 +123,6 @@ class Dashboard extends React.Component {
                 <Toolbar title="Student DashBoard" />
                 <SearchAndSortBar type="text" searchValueChanged={this.handleOnChange} toggleAlphabeticalSort={this.handleAlphabeticalSort} toggleMarksSort={this.handleMarkSort} />
                 <BootstrapContainerandRow>
-
                     {this.renderStudentDetails()}
                 </BootstrapContainerandRow>
             </div>
