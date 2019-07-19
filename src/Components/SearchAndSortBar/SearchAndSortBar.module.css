@@ -10,3 +10,13 @@
     border: 1px solid #ccc;
     outline: none;
 }
+
+.smallButton{
+    background:#3c86f8;
+    border-radius: 5px;
+    width:100px;
+margin:10px auto;
+padding:10px;
+color:white;
+
+}

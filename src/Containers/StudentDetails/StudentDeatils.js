@@ -14,14 +14,6 @@ class StudentDetail extends React.Component{
 
     }
 
-    getTotalMarks(marks){
-        let TotalMarks = 0 ;
-         Object.values(marks).map(marksInEachSubject=>{
-             TotalMarks += Number(marksInEachSubject)
-             return true;
-        })
-        return TotalMarks;
-    }
 
     render(){
         let studentDeatils = this.props.location.state
@@ -37,7 +29,7 @@ class StudentDetail extends React.Component{
             <ul>
             {this.renderSubjectWiseMarks(studentDeatils.marks)}
             </ul>
-            <p className={styles.marks}>Total Marks : {this.getTotalMarks(studentDeatils.marks)}</p>
+            <p className={styles.marks}>Total Marks : {studentDeatils.totalMarks}</p>
             </Card>
         </BootstrapContainerandRow>
         </div>
